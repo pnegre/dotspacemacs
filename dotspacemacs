@@ -155,7 +155,7 @@ values."
    ;; auto-save the file in-place, `cache' to auto-save the file to another
    ;; file stored in the cache directory and `nil' to disable auto-saving.
    ;; (default 'cache)
-   dotspacemacs-auto-save-file-location 'cache
+   dotspacemacs-auto-save-file-location 'original
    ;; Maximum number of rollback slots to keep in the cache. (default 5)
    dotspacemacs-max-rollback-slots 5
    ;; If non nil then `ido' replaces `helm' for some commands. For now only
@@ -257,13 +257,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq-default standard-indent 4)
   (setq-default tab-width 4)
+  (setq compilation-ask-about-save nil)
 
-  ;;(defun go-mode-setup ()
-    ;;(setq compile-command "go build -v && go test -v && go vet")
-    ;;(define-key (current-local-map) "\C-c\C-c" 'compile)
-  ;;)
-  ;;(add-hook 'go-mode-hook 'go-mode-setup)
-  
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
