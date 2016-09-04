@@ -31,6 +31,7 @@ values."
      html
      evil-commentary
      ranger
+     eyebrowse
      ;; markdown
      ;; org
      (shell :variables
